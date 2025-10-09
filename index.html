@@ -1,84 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Heth</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1em 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2em;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      text-align: center;
-      padding: 3em 1em;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <style>
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <header>
+    <!-- Navigation Bar -->
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Contact</a>
-      <a href="#">Course Link</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.coursera.org/learn/machine-learning">Course Link</a>
     </nav>
-  </header>
 
-  <main>
-    <h1>JJ</h1>
-    <p>
-      Hi! I'm Heth, a Carnegie Mellon University student passionate about artificial intelligence and computer science.
-      I've taken CS courses at CMU including <em>17-209</em> and <em>15-112</em>,
-      and I enjoy building AI models that solve real-world problems.
-    </p>
-  </main>
+    <!-- Main Content -->
+    <main>
+        <h1>Your Name Here</h1>
+        <p>This is a short paragraph about yourself. For example, "I have taken AI and web development courses."</p>
+    </main>
 
-  <footer>
-    <p id="date"></p>
-  </footer>
-
-  <script>
-    const today = new Date();
-    document.getElementById('date').textContent = 
-      `Today's date: ${today.toLocaleDateString()}`;
-  </script>
+    <!-- Footer -->
+    <footer>
+        <p>Today's date: <span id="date"></span></p>
+        <script>
+            document.getElementById('date').textContent = new Date().toLocaleDateString();
+        </script>
+    </footer>
 </body>
 </html>
-
