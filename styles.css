@@ -1,15 +1,31 @@
 /* styles.css */
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fafafa;
+  line-height: 1.7;
+  color: #2b2b2b;
+  background-color: #f4f0ff; /* soft lavender background */
 }
 
 main {
   max-width: 65ch;
   margin: auto;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2, h3 {
+  color: #4b0082; /* deep indigo headings */
+}
+
+a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b832fa; /* brighter purple on hover */
 }
 
 img {
@@ -17,10 +33,10 @@ img {
   height: auto;
   display: block;
   margin: 1rem 0;
+  border-radius: 0.5rem;
 }
 
 a:focus, button:focus {
-  outline: 3px solid #0078d4;
-  outline-offset: 2px;
+  outline: 3px solid #ffb703; /* warm amber focus ring */
+  outline-offset: 3px;
 }
-
