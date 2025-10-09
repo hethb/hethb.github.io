@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
+  <nav>
+    <a href="/">Home</a>
+    <a href="/journal.html">Journal</a>
+    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="noopener noreferrer">Course Link</a>
+  </nav>
+
+  <main id="main">
+    <h1>Your Name</h1>
+    <p>I’m currently learning about artificial intelligence, including how models process language, make predictions, and support creative problem-solving in real-world applications.</p>
+  </main>
+
+  <footer>
+    <p>Today's date: <span id="date"></span></p>
+    <script>
+      document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+  </footer>
+</body>
+</html>
